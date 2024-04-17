@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-size: 16px;
+  color: black;
+  background: #f5f5f5;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.ant-layout-sider-children {
+  height: 100%;
+}
+
+.page-box {
+  display: flex;
+  margin-top: 24px;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.inline-flex {
+  display: inline-flex !important;
+}
+
+.ant-form-item {
+  margin-bottom: 12px !important;
+}
